@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="https://cobaltlabwiki.vercel.app/cobaltlab.svg" width="64" height="64" alt="CobaltLab" />
+<img src="https://wipekit.vercel.app/wipekit.svg" width="64" height="64" alt="wipekit" />
 
-# CobaltLab
+# WipeKit
 
 **Self-hosted Rust dedicated server management panel**
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue?style=flat-square)](https://github.com/timhpu/cobaltlab/releases)
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue?style=flat-square)](https://github.com/timhpu/wipekit/releases)
 [![Node](https://img.shields.io/badge/node-20+-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Platform](https://img.shields.io/badge/platform-Ubuntu%20%2F%20Debian-E95420?style=flat-square&logo=ubuntu&logoColor=white)](https://ubuntu.com)
 [![License](https://img.shields.io/badge/license-Proprietary-red?style=flat-square)](#license)
 [![Early Access](https://img.shields.io/badge/status-Early%20Access-yellow?style=flat-square)]()
 
-[Documentation](https://cobaltlabwiki.vercel.app/docs) · [Support](https://cobaltlabwiki.vercel.app/support) · [Releases](https://github.com/timhpu/CobaltLab-Panel/releases)
+[Documentation](https://wipekit.vercel.app/docs) · [Support](https://wipekit.vercel.app/support) · [Releases](https://github.com/timhpu/wipekit-Panel/releases)
 
 </div>
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-CobaltLab is a self-hosted web panel for managing Rust dedicated servers. It runs entirely on your own machine — no cloud, no subscriptions, no tracking.
+WipeKit is a self-hosted web panel for managing Rust dedicated servers. It runs entirely on your own machine — no cloud, no subscriptions, no tracking.
 
 Connect to your server via RCON and get a modern browser-based interface for controlling, monitoring, and automating everything.
 
@@ -46,11 +46,11 @@ Connect to your server via RCON and get a modern browser-based interface for con
 
 ## Installation
 
-Download the latest release from the [Releases](https://github.com/timhpu/CobaltLab-Panel/releases) page and run the installer:
+Download the latest release from the [Releases](https://github.com/timhpu/wipekit-Panel/releases) page and run the installer:
 
 ```bash
-unzip cobaltlab-v*.zip
-cd cobaltlab-v*
+unzip wipekit-v*.zip
+cd wipekit-v*
 ./install.sh
 ```
 
@@ -58,7 +58,7 @@ The installer will:
 - Check and install all required system packages (`curl`, `unzip`, `lsof`, SteamCMD libs)
 - Install backend dependencies
 - Create a default config
-- Register CobaltLab as a **systemd service** that auto-starts on reboot
+- Register wipekit as a **systemd service** that auto-starts on reboot
 
 The panel will be available at `http://YOUR_SERVER_IP:3000`.  
 On first launch you will be taken through the setup wizard.
@@ -67,18 +67,18 @@ On first launch you will be taken through the setup wizard.
 
 ```bash
 # Start / stop / restart
-sudo systemctl start cobaltlab
-sudo systemctl stop cobaltlab
-sudo systemctl restart cobaltlab
+sudo systemctl start wipekit
+sudo systemctl stop wipekit
+sudo systemctl restart wipekit
 
 # Check status
-sudo systemctl status cobaltlab
+sudo systemctl status wipekit
 
 # View live logs
-journalctl -u cobaltlab -f
+journalctl -u wipekit -f
 
 # Disable autostart on boot
-sudo systemctl disable cobaltlab
+sudo systemctl disable wipekit
 ```
 
 ## Changelog
@@ -100,6 +100,6 @@ sudo systemctl disable cobaltlab
 
 ## License
 
-CobaltLab is free to use. The software is distributed in compiled form.  
+WipeKit is free to use. The software is distributed in compiled form.  
 Redistribution, reverse engineering, or resale is not permitted.  
 All rights reserved © 2026 timhpu.
